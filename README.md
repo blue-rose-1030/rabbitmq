@@ -17,29 +17,43 @@ You may first need to run
 
 - Simple messaging:
 
-    send.py receive.py
+    send.py  
+    receive.py
 
 
 - Work Queues:
 
-    new_task.py worker.py
+    new_task.py  
+    worker.py
 
 
 - Publish/Subscribe:
 
-    receive_logs.py emit_log.py "info: This is the log message"
+    receive_logs.py  
+    emit_log.py "info: This is the log message"
 
 
 - Routing:
 
-    receive_logs_direct.py info emit_log_direct.py info "The message"
+    receive_logs_direct.py  
+    info emit_log_direct.py info "The message"
 
 
 - Topics:
 
-    receive_logs_topic.py "*.rabbit" emit_log_topic.py red.rabbit Hello
+    receive_logs_topic.py "*.rabbit"  
+    emit_log_topic.py red.rabbit Hello
 
 
 - RPC:
 
-    rpc_server.py rpc_client.py
+    rpc_server.py  
+    rpc_client.py
+
+
+- Message Logger:
+
+    The publisher program publishes a message into RabbitMQ every 5 seconds; the consumer program prints every message it recevies to its stdout.  
+
+    message_logger/publisher.py  
+    message_logger/consumer.py
