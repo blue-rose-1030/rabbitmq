@@ -57,3 +57,11 @@ You may first need to run
 
     message_logger/publisher.py  
     message_logger/consumer.py
+
+
+- Scraping Service:
+
+    Web scraping service with message driven architecture using RabbitMQ.  
+
+    scraping_service/scraper.py  
+    scraping_service/worker.py
